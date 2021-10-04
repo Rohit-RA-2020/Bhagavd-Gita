@@ -35,8 +35,8 @@ body{
 
   h1 {
     /* Set max and min font sizes */
-    --max-font: 50;
-    --min-font: 25;
+    --max-font: 40;
+    --min-font: 20;
     font-family: var(--main-font);
     font-size: var(--responsive);
   }
