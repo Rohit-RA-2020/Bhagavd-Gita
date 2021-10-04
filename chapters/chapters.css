@@ -1,4 +1,12 @@
 
+* {
+  /* Typography */
+  --main-font: 'Slabo 27px', serif;
+  
+  /* Calculation */
+  --responsive: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420))); /* Ranges from 421px to 1199px */
+}
+
 body{
     background-image: url("/images/bgimg.png");
     background-size: 100% auto;
@@ -24,6 +32,16 @@ body{
       color: #fff;
       text-align: center;
   }
+
+  h1 {
+    /* Set max and min font sizes */
+    --max-font: 50;
+    --min-font: 25;
+    font-family: var(--main-font);
+    font-size: var(--responsive);
+  }
+
+  
   
   .vignette{
     position:absolute;
